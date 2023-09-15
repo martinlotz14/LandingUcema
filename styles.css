@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:ital,wght@0,900;1,300;1,400&family=Teko:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'teko';
+    color: black;
+    /* padding-left: 2px; */
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+
+main{
+    padding-left: 0%;
+}
+
+/*====== header ======*/
+.encabezado {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40%;
+    padding-left: 2px;
+    padding-top: 5px;
+}
+
+.titulos-header {
+    display: flex;
+    height: 10%;
+    padding-right: 5cm;
+}
+
+.logo {
+height: 150px;
+width: 150px;
+}
+
+header{
+    background-image: url(./sources/banner.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+    border-block-end-style: groove;
+}
+
+
+.quien-header{
+    margin: 20px;
+}
+
+.album-header{
+    margin: 20px;
+}
+
+.recital-header{
+    margin: 20px;
+}
+
+.contacto-header{
+    margin: 20px;
+}
+
+/* === Body ===*/
+.photo-frank {
+     height: 50vw;
+     border-radius: 50px;
+     
+}
+
+/* .primer-container{
+    background-image: url(./sources/background-naranja.webp);
+    background-repeat: no-repeat;
+} */
+
+.quien-frank{
+    font-size: 5vh;
+}
+
+.container-photo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.texto-quien{
+    text-align: center;
+}
+
+.container-quien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 80px;
+}
+
+.banner-varios{
+    display: flex;
+    background-image: url(./sources/bannervarios.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 25%;
+    padding-bottom: 30px;
+    align-items: center;
+    padding-left: 0%;
+}
+
+.banner-rosa{
+    display: flex;
+    background-image: url(./sources/BannerRosa.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding-top: 25%;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.titulo-section{
+    font-size: 5vh;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.card-title{
+    font-size: 3vh;
+    text-decoration: underline;
+}
+
+
+            /* === Albumes ===*/
+/*
+.albumes {
+    display: flex;
+    flex-direction: row;
+}
+*/
+
+.card-album {
+    width: 20vw;
+}
+
+
+.photo-album {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+.container-album {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+            /* === Recitales===*/
+
+.photo-recitales {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+
+.recitales{
+    padding-top: 60px;
+}
+
+.recital{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.container-recitales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 25px;
+}
+
+.titulo-recital{
+    font-size: 4vh;
+}
+
+.link-entradas{
+    font-size: 3vh;
+}
+
+
+/* === Footer ===*/
+
+.contacto{
+    font-size: 250%;
+}
+
+input{
+    width: 10cm;
+    height: 1cm;
+    /* border-width: 0.1vw; */
+    border-color: rgb(0, 0, 0);
+}
+
+.input-edad{
+    width: 30px;
+    margin: 10px;
+}
+
+.motivo{
+    width: 10cm;
+}
+
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: double;
+}
+
+.foto{
+    display: flex;
+    flex: wrap;
+    width: 50%;
+    align-items: flex-end;
+    background-image: url(./sources/fotoBMW.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:cover;
+    height: 57vh;
+    width: 70%;
+}
+
+
+.primer-f {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    font-size: 120%;
+    width: 50%;
+    padding-left: 3px;
+    padding-top: 10px;
+    height: 29vw;
+}
+
+.edad{
+    width: 1cm;
+}
+
+.motivo{
+    height: 1cm;
+    min-width: none;
+}
+
+.segundo-f {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:baseline;
+    align-items:center;
+}
+
+.spotify {
+    height: 60px;
+    width: 60px;
+    padding-left: 1cm;
+}
+
+.instagram {
+    display: flex;
+    height: 78px;
+    width: 78px;
+}
+
+.twitter {
+    height: 60px;
+    width: 60px;
+}
+
+
+
+
+/* === channel.index ===*/
+
+.cuerpo-album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vh;
+    text-decoration: solid;
+    padding-top: 1cm;
+}
+
+.foto-blonde-index{
+    background-image: url(../TP_LANDING_PAGE/sources/albumCovers/BlondCover.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+}
+
+.foto-nostalgia-index{
+    background-image: url(../TP_LANDING_PAGE/sources/albumCovers/Nostalgia.cover.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+}
+
+.foto-channel-index{
+    background-image: url(../TP_LANDING_PAGE/sources/albumCovers/ChannelOrangeCover.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+}
