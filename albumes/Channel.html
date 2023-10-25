@@ -51,39 +51,43 @@
 
     <footer>
         <a name="contacto" id="contacto">
-        <div class="foot">
-        <div class="primer-f">
-        <h3 class="contacto">Contacto:</h3>
-        <form action="main.html" method="get">
-            Nombre y Apellido: <input type="text" name="nombre" maxlength="20" placeholder=" Ingrese su nombre y apellido"> 
-            <br>
-            <!-- Apellido: <input type="text" name="apellido" placeholder=" Ingrese su apellido" required> 
-            <br> -->
-            Email: <input type="text" name="email" placeholder=" Ingrese su email" required>
-            <br>
-            Edad: <input type="number" name="edad" min="18" max="99" value="30" class="input-edad" class="edad"> 
-            <br>
-            <br>
-            <textarea name="motivo_de_contacto" id="motivo_de_contacto" cols="30" rows="10" placeholder=" Detalle su motivo de contacto" class="motivo"></textarea>
-            <!-- <br>
-            <input type="checkbox" name="info" class="input-boton"> Quiero recibir noticias sobre Frank Ocean!  -->
-            <br>
-            <input type="submit" value="Enviar">
-            <br>
-        </div>
-        <!-- <div class="segundo-f">
-            <a href="https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=NJKZazgmRfeAdjIjvs18hA"><img src="./sources/logosRedesSociales/logoSpotify.png" alt="logo spotify" class="spotify"></a>
-            <a href="https://instagram.com/blonded?igshid=MzRlODBiNWFlZA=="><img src="./sources/logosRedesSociales/iconoInstagram.png" alt="logo Instagram" class="instagram"></a>
-            <a href="https://x.com/blahnded?s=21"><img src="./sources/logosRedesSociales/logoTwitter.png" alt="logo twitter" class="twitter"></a>
-        </div> -->
-        
-       <div class="foto">
-        <a href="https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=NJKZazgmRfeAdjIjvs18hA"> <img src="../sources/logosRedesSociales/logoSpotify.png" alt="logo spotify" class="spotify"></a>
-        <a href="https://instagram.com/blonded?igshid=MzRlODBiNWFlZA=="><img src="../sources/logosRedesSociales/logo.Instagram.png" alt="logo Instagram" class="instagram"></a>
-        <a href="https://x.com/blahnded?s=21"><img src="../sources/logosRedesSociales/logoTwitter.png" alt="logo twitter" class="twitter"></a>
-        </div>
-        </div>
-        </a> 
+            <div class="foot">
+                <div class="primer-f">
+                    <h3 class="contacto">Contacto:</h3>
+                    <form action="main.html" method="get">
+                        <div>
+                        <label for="fullname">Nombre y Apellido: </label>
+                        <input type="text" name="fullname" maxlength="20" placeholder= " Ingrese su nombre y apellido" required>
+                        </div>
+                        <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder=" Ingrese su email" required>
+                        </div>
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" min="1" max="99" value="" class="input-age" >
+                        <div>
+                       <textarea name="contact" id="contact" cols="30" rows="10"
+                            placeholder=" Detalle su motivo de contacto" class="motivo" required></textarea>
+                        </div>
+                        <input type="submit" value="Enviar">
+                        
+                </div>
+                <div class="media">
+                <nav>
+                        <ul class="logosMedia">
+                        <li><a href="https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=NJKZazgmRfeAdjIjvs18hA"> <img src="../sources/logosRedesSociales/logoSpotify.png" alt="logo spotify" class="spotify"></a> </li>
+                        <li><a href="https://instagram.com/blonded?igshid=MzRlODBiNWFlZA=="><img src="../sources/logosRedesSociales/logo.Instagram.png" alt="logo Instagram" class="instagram"></a> </li>
+                        <li><a href="https://x.com/blahnded?s=21"><img src="../sources/logosRedesSociales/logoTwitter.png" alt="logo twitter" class="twitter"></a> </li>
+                        </ul>
+                   
+                </nav>
+                </div>
+                <div class="bannerFooter"></div>
+            </div>
+          
+        </a>
+             
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>

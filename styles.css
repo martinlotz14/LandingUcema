@@ -1,26 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:ital,wght@0,900;1,300;1,400&family=Teko:wght@400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'teko';
     color: black;
-    /* padding-left: 2px; */
 }
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
 
-.link{
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.link {
     text-decoration: none;
     color: black;
 }
 
 
-main{
+main {
     padding-left: 0%;
 }
+
 
 /*====== header ======*/
 .encabezado {
@@ -30,6 +42,12 @@ main{
     height: 40%;
     padding-left: 2px;
     padding-top: 5px;
+    list-style: none;
+}
+
+li {
+    margin: 1cm;
+    font-size: 3vh;
 }
 
 .titulos-header {
@@ -39,48 +57,55 @@ main{
 }
 
 .logo {
-height: 150px;
-width: 150px;
+    height: 150px;
+    width: 150px;
 }
 
-header{
+header {
     background-image: url(./sources/banner.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: right;
     border-block-end-style: groove;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
 }
 
 
-.quien-header{
+.quien-header,
+.album-header,
+.recital-header,
+.contacto-header {
     margin: 20px;
 }
 
-.album-header{
-    margin: 20px;
-}
-
-.recital-header{
-    margin: 20px;
-}
-
-.contacto-header{
-    margin: 20px;
+#icon-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #c0aeaefa;
+    border-radius: 100%;
+    color: #9d3535;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* === Body ===*/
 .photo-frank {
-     height: 50vw;
-     border-radius: 50px;
-     
+    height: 50vw;
+    border-radius: 50px;
+
 }
 
-/* .primer-container{
-    background-image: url(./sources/background-naranja.webp);
-    background-repeat: no-repeat;
-} */
-
-.quien-frank{
+.quien-frank {
     font-size: 5vh;
 }
 
@@ -90,7 +115,7 @@ header{
     padding-bottom: 30px;
 }
 
-.texto-quien{
+.texto-quien {
     text-align: center;
 }
 
@@ -103,46 +128,39 @@ header{
     padding-bottom: 80px;
 }
 
-.banner-varios{
+.banner-varios {
     display: flex;
     background-image: url(./sources/bannervarios.jpeg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     padding-top: 25%;
     padding-bottom: 30px;
     align-items: center;
     padding-left: 0%;
 }
 
-.banner-rosa{
+.banner-rosa {
     display: flex;
     background-image: url(./sources/BannerRosa.jpeg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     padding-top: 25%;
     padding-bottom: 30px;
     align-items: center;
 }
 
-.titulo-section{
+.titulo-section {
     font-size: 5vh;
     padding-left: 5px;
     text-decoration: underline;
 }
 
-.card-title{
+.card-title {
     font-size: 3vh;
     text-decoration: underline;
 }
 
-
-            /* === Albumes ===*/
-/*
-.albumes {
-    display: flex;
-    flex-direction: row;
-}
-*/
+/* === Albumes ===*/
 
 .card-album {
     width: 20vw;
@@ -161,7 +179,7 @@ header{
     margin-bottom: 50px;
 }
 
-            /* === Recitales===*/
+/* === Recitales===*/
 
 .photo-recitales {
     width: 200px;
@@ -169,11 +187,11 @@ header{
     border-radius: 50px;
 }
 
-.recitales{
+.recitales {
     padding-top: 60px;
 }
 
-.recital{
+.recital {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,34 +206,33 @@ header{
     padding-top: 25px;
 }
 
-.titulo-recital{
+.titulo-recital {
     font-size: 4vh;
 }
 
-.link-entradas{
+.link-entradas {
     font-size: 3vh;
 }
 
 
 /* === Footer ===*/
 
-.contacto{
+.contacto {
     font-size: 250%;
 }
 
-input{
+input {
     width: 10cm;
     height: 1cm;
-    /* border-width: 0.1vw; */
     border-color: rgb(0, 0, 0);
 }
 
-.input-edad{
+.input-age {
     width: 30px;
     margin: 10px;
 }
 
-.motivo{
+.motivo {
     width: 10cm;
 }
 
@@ -225,9 +242,12 @@ input{
     flex-direction: row;
     justify-content: space-between;
     border-style: double;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
 }
 
-.foto{
+.bannerFooter {
     display: flex;
     flex: wrap;
     width: 50%;
@@ -235,7 +255,7 @@ input{
     background-image: url(./sources/fotoBMW.jpeg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size:cover;
+    background-size: cover;
     height: 57vh;
     width: 70%;
 }
@@ -248,15 +268,13 @@ input{
     font-size: 120%;
     width: 50%;
     padding-left: 3px;
-    padding-top: 10px;
-    height: 29vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.edad{
-    width: 1cm;
-}
 
-.motivo{
+
+.motivo {
     height: 1cm;
     min-width: none;
 }
@@ -264,20 +282,19 @@ input{
 .segundo-f {
     display: flex;
     flex-direction: column-reverse;
-    justify-content:baseline;
-    align-items:center;
+    justify-content: baseline;
+    align-items: center;
 }
 
 .spotify {
     height: 60px;
     width: 60px;
-    padding-left: 1cm;
 }
 
 .instagram {
     display: flex;
-    height: 78px;
-    width: 78px;
+    height: 58px;
+    width: 58px;
 }
 
 .twitter {
@@ -285,12 +302,24 @@ input{
     width: 60px;
 }
 
+.media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    align-self: center;
+
+}
 
 
+.logosMedia {
+    list-style: none;
+}
 
 /* === channel.index ===*/
 
-.cuerpo-album{
+.cuerpo-album {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,7 +328,7 @@ input{
     padding-top: 1cm;
 }
 
-.foto-blonde-index{
+.foto-blonde-index {
     background-image: url(../TP_LANDING_PAGE/sources/albumCovers/BlondCover.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -307,7 +336,7 @@ input{
     width: 500px;
 }
 
-.foto-nostalgia-index{
+.foto-nostalgia-index {
     background-image: url(../TP_LANDING_PAGE/sources/albumCovers/Nostalgia.cover.webp);
     background-repeat: no-repeat;
     background-size: contain;
@@ -315,10 +344,167 @@ input{
     width: 500px;
 }
 
-.foto-channel-index{
+.foto-channel-index {
     background-image: url(../TP_LANDING_PAGE/sources/albumCovers/ChannelOrangeCover.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 500px;
     width: 500px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width:1240px) {
+    .encabezado {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .move-container-all {
+        transform: translateX(300px);
+    }
+
+    .menu {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background: #b4aaa1;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px black;
+        transition: all 300ms cubic-bezier(1, 0, 0, 1);
+    }
+
+    .show-lateral {
+        width: 300px;
+        transform: translateX(0px);
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+    }
+
+    .menu nav ul li {
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-start;
+    }
+
+
+    .menu-selected:before {
+        width: 0;
+    }
+
+    .menu nav ul li a {
+        margin-top: 40px;
+        color: #b6a2a2;
+    }
+
+    #icon-menu {
+        display: flex;
+    }
+
+
+
+    .nav-menu a:after {
+        bottom: 0;
+        width: 0;
+    }
+}
+
+@media(max-width:1042px) {
+    .bannerFooter {
+        display: flex;
+        flex: wrap;
+        width: 50%;
+        align-items: flex-end;
+        background-image: url(../TP_LANDING_PAGE/sources/frankF1.JPG);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 57vh;
+        width: 70%;
+    }
+}
+
+
+
+@media(max-width:900px) {
+    .container-album {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card-text {
+        margin-bottom: 50px;
+    }
+
+
+    .container-recitales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recital {
+        margin-bottom: 50px;
+    }
+
+
+    .bannerFooter {
+        display: flex;
+        flex: wrap;
+        width: 50%;
+        align-items: flex-end;
+        background-image: url(../TP_LANDING_PAGE/sources/BannerNaranja.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        height: 57vh;
+        width: 100%;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logosMedia {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label {
+        display: block;
+    }
+
+    .container-album {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+}
+
+
+
+
+/* No pude terminar bien el menu hamburguesa, me quedo una parte incompleta */
